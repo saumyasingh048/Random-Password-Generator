@@ -1,0 +1,96 @@
+/* ********************* */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+/* ********************* */
+/* Main Container */
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  margin: 0px 20px;
+}
+
+.main-heading {
+  margin-bottom: 20px;
+}
+
+.pass-input {
+  height: 3.2rem;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  letter-spacing: 4px;
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.05),
+    inset -4px -4px 10px rgba(255, 255, 255, 1),
+    4px 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.pass-input::placeholder {
+  font-size: 1rem;
+  letter-spacing: 0px;
+}
+
+.btn-div {
+  margin: 20px 0px;
+}
+
+#pass-btn {
+  height: 2.3rem;
+  border-radius: 8px;
+  border: none;
+  width: 10.5rem;
+  font-size: 0.9rem;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#pass-btn:hover {
+  background-color: #1f1e1e;
+}
+
+#pass-btn:active {
+  background-color: #fbc7f7;
+  color: #000000;
+}
+
+.fa {
+  font-size: 1.5rem;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.fa:hover {
+  color: #1f1e1e;
+}
+.fa:active {
+  color: #fbc7f7;
+}
+/* ********************* */
+/* Utility Classes */
+.center {
+  text-align: center;
+}
+.font {
+  font-family: consolas;
+}
+
+/* Media Query */
+
+@media screen and (max-device-width: 500px) {
+  .fa {
+    left: 300px;
+  }
+}
